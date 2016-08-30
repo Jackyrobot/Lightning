@@ -38,7 +38,7 @@ void draw()
   textSize(20);
   text("Kills: " + kills, 20, 23);
   //text("Cows Killed: " + angusKills, 20, 45);
-  image(photo,200,530);
+  //image(photo,200,530);
 }
 
 void mousePressed()
