@@ -4,6 +4,7 @@ int endX = 200;
 int endY = 0;
 int back = 0;
 int kills = 0;
+PImage photo;
 
 void setup()
 {
@@ -11,7 +12,7 @@ void setup()
   frameRate(30);
   strokeWeight((int)(Math.random()*1)+2);
   fill(200);
-  
+  photo = loadImage("angus.PNG");
 }
 
 void draw()
@@ -35,6 +36,7 @@ void draw()
   }
   textSize(20);
   text("Kills: " + kills, 20, 23);
+  image(photo,200,530);
 }
 
 void mousePressed()
