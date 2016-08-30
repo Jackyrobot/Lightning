@@ -36,8 +36,8 @@ void draw()
     person(i, 560); 
   }
   textSize(20);
-  text("People Killed: " + kills, 20, 23);
-  text("Cows Killed: " + angusKills, 20, 45);
+  text("Kills: " + kills, 20, 23);
+  //text("Cows Killed: " + angusKills, 20, 45);
   image(photo,200,530);
 }
 
@@ -49,7 +49,7 @@ void mousePressed()
   startY = 0;
   endX = 0;
   endY = 0;
-  if ((mouseX>10 && mouseX<30) || (mouseX >110 && mouseX<130) || /*(mouseX>210 && mouseX<230) ||*/ (mouseX>310 && mouseX<330) || (mouseX>410 && mouseX<430) || (mouseX>510 && mouseX<530) || (mouseX>610 && mouseX<630) || (mouseX>710 && mouseX<730) )
+  if ((mouseX>10 && mouseX<30) || (mouseX >110 && mouseX<130) || (mouseX>210 && mouseX<230) || (mouseX>310 && mouseX<330) || (mouseX>410 && mouseX<430) || (mouseX>510 && mouseX<530) || (mouseX>610 && mouseX<630) || (mouseX>710 && mouseX<730) )
     kills++;
   if (mouseX>210 && mouseX<230)
     angusKills++;
